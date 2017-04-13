@@ -177,6 +177,10 @@
 		ADE7684E1E729E6700C5695B /* sns_icon_37@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADE768421E729E6700C5695B /* sns_icon_37@2x.png */; };
 		ADF264371E5ABBE900222205 /* UIButton+ImageLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF264361E5ABBE900222205 /* UIButton+ImageLocation.m */; };
 		ADF2643C1E5AD1CD00222205 /* RedEnvelopeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF2643B1E5AD1CD00222205 /* RedEnvelopeListViewController.m */; };
+		BF1E4E2F1E9DD402008A5975 /* MyRedEnvelopeListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E4E2E1E9DD402008A5975 /* MyRedEnvelopeListViewController.m */; };
+		BF1E4E321E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E4E311E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.m */; };
+		BF1E4E361E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E4E351E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m */; };
+		BF1E4E3D1E9F5932008A5975 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E4E3C1E9F5932008A5975 /* UITextView+Placeholder.m */; };
 		FA0214251DAE14B5006CCBAF /* ChangePayPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0214241DAE14B5006CCBAF /* ChangePayPasswordVC.m */; };
 		FA07FFB81D2213770080711B /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA07FFB71D2213770080711B /* GoodsDetailViewController.m */; };
 		FA0C83951E091A730058CB23 /* tuijian_shouye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0C83911E091A730058CB23 /* tuijian_shouye@2x.png */; };
@@ -1021,6 +1025,14 @@
 		ADF264361E5ABBE900222205 /* UIButton+ImageLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageLocation.m"; sourceTree = "<group>"; };
 		ADF2643A1E5AD1CD00222205 /* RedEnvelopeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedEnvelopeListViewController.h; sourceTree = "<group>"; };
 		ADF2643B1E5AD1CD00222205 /* RedEnvelopeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedEnvelopeListViewController.m; sourceTree = "<group>"; };
+		BF1E4E2D1E9DD402008A5975 /* MyRedEnvelopeListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRedEnvelopeListViewController.h; sourceTree = "<group>"; };
+		BF1E4E2E1E9DD402008A5975 /* MyRedEnvelopeListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRedEnvelopeListViewController.m; sourceTree = "<group>"; };
+		BF1E4E301E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRedEnvelopeDetailViewController.h; sourceTree = "<group>"; };
+		BF1E4E311E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRedEnvelopeDetailViewController.m; sourceTree = "<group>"; };
+		BF1E4E341E9E0CDF008A5975 /* MySendRedEnvelopeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySendRedEnvelopeViewController.h; sourceTree = "<group>"; };
+		BF1E4E351E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySendRedEnvelopeViewController.m; sourceTree = "<group>"; };
+		BF1E4E3B1E9F5932008A5975 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
+		BF1E4E3C1E9F5932008A5975 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
 		C21BDC28DE26A6AB35FC94A5 /* Pods-YunlianCA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunlianCA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunlianCA/Pods-YunlianCA.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0214231DAE14B5006CCBAF /* ChangePayPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePayPasswordVC.h; sourceTree = "<group>"; };
 		FA0214241DAE14B5006CCBAF /* ChangePayPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePayPasswordVC.m; sourceTree = "<group>"; };
@@ -2402,6 +2414,35 @@
 			name = ShareImage;
 			sourceTree = "<group>";
 		};
+		BF1E4E251E9DD124008A5975 /* MyRedEnvelopeListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E4E2D1E9DD402008A5975 /* MyRedEnvelopeListViewController.h */,
+				BF1E4E2E1E9DD402008A5975 /* MyRedEnvelopeListViewController.m */,
+				BF1E4E331E9E0CB2008A5975 /* MyRedEnvelopeDetailViewController */,
+				BF1E4E371E9E0CEA008A5975 /* MySendRedEnvelopeViewController */,
+			);
+			name = MyRedEnvelopeListViewController;
+			sourceTree = "<group>";
+		};
+		BF1E4E331E9E0CB2008A5975 /* MyRedEnvelopeDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E4E301E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.h */,
+				BF1E4E311E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.m */,
+			);
+			name = MyRedEnvelopeDetailViewController;
+			sourceTree = "<group>";
+		};
+		BF1E4E371E9E0CEA008A5975 /* MySendRedEnvelopeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF1E4E341E9E0CDF008A5975 /* MySendRedEnvelopeViewController.h */,
+				BF1E4E351E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m */,
+			);
+			name = MySendRedEnvelopeViewController;
+			sourceTree = "<group>";
+		};
 		FA0214201DAE148D006CCBAF /* ChangePayPasswordVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -3620,6 +3661,7 @@
 				FA6CE24C1D1910B10061CB0A /* MemberCenterViewController */,
 				FA8C7FF51D113CC30053DCA0 /* MyOrderViewController */,
 				FA6100181D263CE100CFF76C /* ReceivedOrderViewController */,
+				BF1E4E251E9DD124008A5975 /* MyRedEnvelopeListViewController */,
 				FA68B8101D13DA070039E63D /* MyWalletViewController */,
 				FA68B7F71D13AD890039E63D /* MyCouponViewController */,
 				FA8C7FF41D113CC30053DCA0 /* MyCollectionViewController */,
@@ -3660,6 +3702,8 @@
 		FA8ADF4D1D05997900922FAB /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				BF1E4E3B1E9F5932008A5975 /* UITextView+Placeholder.h */,
+				BF1E4E3C1E9F5932008A5975 /* UITextView+Placeholder.m */,
 				FA8ADF501D05999100922FAB /* NSDate+Date.h */,
 				FA8ADF511D05999100922FAB /* NSDate+Date.m */,
 				FA8ADF521D05999100922FAB /* NSString+String.h */,
@@ -4899,6 +4943,7 @@
 				6E7EAA4F1D7B0116006A1DB8 /* YYWeakProxy.m in Sources */,
 				FA6D27971D0EBA9800D73F2A /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
 				FA5E59221D1A2AC00074867A /* StoreManageViewController.m in Sources */,
+				BF1E4E321E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.m in Sources */,
 				FA622E731DC34AE500BA3376 /* YongJinMingXiVC.m in Sources */,
 				FA6D27A31D0EBA9900D73F2A /* PSTGridLayoutSection.m in Sources */,
 				FA8ADEFB1D058C6A00922FAB /* main.m in Sources */,
@@ -4936,6 +4981,7 @@
 				6E7EAA301D7B0116006A1DB8 /* YYTextContainerView.m in Sources */,
 				FA5F6F3F1D1B8DFC0019844E /* ZYContact.m in Sources */,
 				FA6D27901D0EBA9800D73F2A /* UIButton+EMWebCache.m in Sources */,
+				BF1E4E3D1E9F5932008A5975 /* UITextView+Placeholder.m in Sources */,
 				6E7EAA3A1D7B0116006A1DB8 /* NSParagraphStyle+YYText.m in Sources */,
 				FA6A1CA81D237DD800FB0ABC /* User.m in Sources */,
 				FA4503361E0A576700F9D59B /* RedEnvelopeSendViewController.m in Sources */,
@@ -5022,6 +5068,7 @@
 				AD74BC301E81089400BD50C4 /* bitstream.c in Sources */,
 				FA0F7CA11D5193D700008370 /* PaySuccessViewController.m in Sources */,
 				FA6CE2551D192BBC0061CB0A /* TuiGuangViewController.m in Sources */,
+				BF1E4E361E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m in Sources */,
 				FACBED821D7595C80072AA7D /* IQKeyboardManager.m in Sources */,
 				FA6D59311D2BC56D007F5EFC /* ShippingAddressViewController.m in Sources */,
 				6E7EAA091D7B0116006A1DB8 /* NSObject+YYAddForKVO.m in Sources */,
@@ -5031,6 +5078,7 @@
 				FA82118A1D3878F60016A7D9 /* README.md in Sources */,
 				FA6D25BC1D0EA36400D73F2A /* EditNewArticleViewController.m in Sources */,
 				AD3B86911E80C31100239428 /* UIView+SDExtension.m in Sources */,
+				BF1E4E2F1E9DD402008A5975 /* MyRedEnvelopeListViewController.m in Sources */,
 				FAB5AF0C1D7D4E4800802D6D /* RechargeModeViewController.m in Sources */,
 				FA6D27991D0EBA9800D73F2A /* PSTCollectionViewCell.m in Sources */,
 				FA45032D1E0A4FE500F9D59B /* RedEnvelopeReceivedViewController.m in Sources */,

@@ -4261,8 +4261,6 @@
             complete(nil);
         }
         
-        
-        
         //NSLog(@"获取红包列表===%@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
          complete(nil);

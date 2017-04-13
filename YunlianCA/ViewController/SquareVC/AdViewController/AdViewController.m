@@ -87,6 +87,7 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     if (self.isURL) {
+        
         NSString * string2 = [webView  stringByEvaluatingJavaScriptFromString:@"document.title"];
         self.title=string2;
     }

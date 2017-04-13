@@ -14,6 +14,7 @@
 #import "MyArticleViewController.h"
 #import "MyOrderViewController.h"
 #import "MyOrderDetailViewController.h"
+#import "MyRedEnvelopeListViewController.h"
 #import "MyCouponViewController.h"
 #import "MyWalletViewController.h"
 #import "ScanViewController.h"
@@ -265,8 +266,11 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    if (section==3)
+    if (section==2)
     {
+        return 2;
+    }
+    else if (section == 3){
         return 5;
     }
     else
@@ -470,16 +474,17 @@
                 [(UIView *)[cell.contentView.subviews lastObject] removeFromSuperview];
             }
         }
-        
+        NSArray *imageArray=[[NSArray alloc]initWithObjects:IMAGE(@"wode_wodedingdan"),IMAGE(@"wode_wodedingdan"), nil];
         UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(WZ(15), WZ(15), WZ(20), WZ(20))];
-        imageView.image=IMAGE(@"wode_wodedingdan");
+        imageView.image=imageArray[indexPath.row];
         //        imageView.backgroundColor=COLOR_CYAN;
         [cell.contentView addSubview:imageView];
         
         UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(imageView.right+WZ(15), 0, WZ(120), WZ(50))];
         titleLabel.font=FONT(17,15);
         //        titleLabel.backgroundColor=COLOR_CYAN;
-        titleLabel.text=@"收到的订单";
+        NSArray *titleArray=[[NSArray alloc]initWithObjects:@"收到的订单",@"红包列表", nil];
+        titleLabel.text=titleArray[indexPath.row];
         [cell.contentView addSubview:titleLabel];
         
         UIImageView *jiantouIV=[[UIImageView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH-WZ(15)-WZ(8), WZ(17.5), WZ(8), WZ(15))];
@@ -632,11 +637,20 @@
 {
     if (indexPath.section==2)
     {
-        //收到的订单
-        ReceivedOrderViewController *vc=[[ReceivedOrderViewController alloc]init];
-        vc.hidesBottomBarWhenPushed=YES;
-        [self.navigationController pushViewController:vc animated:YES];
-        
+        if (indexPath.row == 0) {
+            //收到的订单
+            ReceivedOrderViewController *vc=[[ReceivedOrderViewController alloc]init];
+            vc.hidesBottomBarWhenPushed=YES;
+            [self.navigationController pushViewController:vc animated:YES];
+        }
+        if (indexPath.row==1)
+        {
+            //红包列表
+            MyRedEnvelopeListViewController *vc=[[MyRedEnvelopeListViewController alloc]init];
+            vc.hidesBottomBarWhenPushed=YES;
+            [self.navigationController pushViewController:vc animated:YES];
+            
+        }
     }
     if (indexPath.section==3)
     {
