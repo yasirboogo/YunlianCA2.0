@@ -244,9 +244,8 @@
 
     }
     else if (indexPath.section == 1 || indexPath.section == 2 || indexPath.section == 3 || indexPath.section == 4){
-        UIImageView *rightImgView = [[UIImageView alloc] initWithFrame:CGRectMake(cellView.width-WZ(15), 0, WZ(15), WZ(15))];
-        rightImgView.image = IMAGE(@"");
-        rightImgView.backgroundColor = COLOR_RED;
+        UIImageView *rightImgView = [[UIImageView alloc] initWithFrame:CGRectMake(cellView.width-WZ(10), WZ(3), WZ(7), WZ(7))];
+        rightImgView.image = IMAGE(@"hongdian");
         [cellView addSubview:rightImgView];
         
         UILabel *unitLabel = [[UILabel alloc] init];
@@ -271,9 +270,8 @@
         [cellView addSubview:contentTextField];
     }
     else if (indexPath.section == 7 || indexPath.section == 8){
-        UIImageView *rightImgView = [[UIImageView alloc] initWithFrame:CGRectMake(cellView.width-WZ(15), 0, WZ(15), WZ(15))];
-        rightImgView.image = IMAGE(@"");
-        rightImgView.backgroundColor = COLOR_RED;
+        UIImageView *rightImgView = [[UIImageView alloc] initWithFrame:CGRectMake(cellView.width-WZ(10), WZ(3), WZ(7), WZ(7))];
+        rightImgView.image = IMAGE(@"hongdian");
         [cellView addSubview:rightImgView];
         
         UITextField *contentTextField = [[UITextField alloc] initWithFrame:CGRectMake(leftLabel.right+WZ(10), WZ(5), rightImgView.left-leftLabel.right-WZ(10)*2, WZ(35))];

@@ -12,6 +12,7 @@
 #import "SquareViewController.h"
 #import "MyselfInfoViewController.h"
 #import "SVProgressHUD.h"
+#import "StoreSearchViewController.h"
 //#import "RedEnvelopeSendViewController.h"
 #import "RedEnvelopeSendViewController.h"
 @interface NearbyViewController ()<UITableViewDelegate,UITableViewDataSource,TapImageViewDelegate>
@@ -36,6 +37,7 @@
 @property(nonatomic,strong)NSString *address;
 @property(nonatomic,strong)NSString *addressId;
 @property(nonatomic,strong)UIButton *rightBtn;
+@property(nonatomic,strong)UIButton *leftBtn;
 @property(nonatomic,strong)NSMutableArray *addressArray;
 @property(nonatomic,strong)NSMutableArray *addressIdArray;
 
@@ -226,6 +228,18 @@
     [naviView addSubview:rightBtn];
     self.rightBtn=rightBtn;
     
+    UIButton *leftBtn=[[UIButton alloc]initWithFrame:CGRectMake(WZ(10), 20+WZ(5), WZ(120), WZ(35))];
+    [leftBtn setImage:IMAGE(@"sousuo_hei") forState:UIControlStateNormal];
+    leftBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+    leftBtn.imageEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);//上左下右
+    leftBtn.titleLabel.font=FONT(15, 13);
+    //    rightBtn.backgroundColor=COLOR_CYAN;
+    [leftBtn addTarget:self action:@selector(leftBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [naviView addSubview:leftBtn];
+    self.leftBtn=leftBtn;
+    
+    
+    
     UILabel *titleLabel=[[UILabel alloc]initWithFrame:CGRectMake(WZ(130), 20+WZ(5), SCREEN_WIDTH-WZ(130*2), WZ(35))];
     titleLabel.text=@"邻里圈";
     titleLabel.textAlignment=NSTextAlignmentCenter;
@@ -233,7 +247,6 @@
     [naviView addSubview:titleLabel];
 //    titleLabel.backgroundColor=COLOR_CYAN;
 }
-
 -(void)createTableView
 {
     _tableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64-49)];
@@ -777,7 +790,11 @@
 {
     [self createAddressView];
 }
-
+//搜索
+-(void)leftBtnClick{
+    StoreSearchViewController *vc = [[StoreSearchViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:NO];
+}
 //地区选择界面
 -(void)createAddressView
 {

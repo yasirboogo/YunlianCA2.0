@@ -89,6 +89,18 @@
     
     UIBarButtonItem *leftItem=[[UIBarButtonItem alloc]initWithCustomView:backBtn];
     self.navigationItem.leftBarButtonItem=leftItem;
+    
+    
+    UIButton *callBtn=[[UIButton alloc]init];
+    callBtn.frame = CGRectMake(SCREEN_WIDTH-WZ(35), WZ(10), WZ(25), WZ(25));
+    [callBtn setBackgroundImage:IMAGE(@"bodadianhua") forState:UIControlStateNormal];
+    callBtn.layer.cornerRadius=callBtn.width/2.0;
+    callBtn.clipsToBounds=YES;
+    [callBtn addTarget:self action:@selector(callBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+    callBtn.tag = -99;
+    UIBarButtonItem *rightItem=[[UIBarButtonItem alloc]initWithCustomView:callBtn];
+    self.navigationItem.rightBarButtonItem=rightItem;
+    
 }
 
 -(void)createTableView
@@ -443,8 +455,13 @@
 //打电话
 -(void)callBtnClick:(UIButton*)button
 {
-    NSDictionary *storeDict=self.storeModel.myStoreArray[button.tag];
-    NSString *mobile=[NSString stringWithFormat:@"%@",[storeDict objectForKey:@"mobile"]];
+    NSString *mobile = [NSString string];
+    if (button.tag == -99) {
+        mobile=[NSString stringWithFormat:@"%@",self.userInfo.username];
+    }else{
+        NSDictionary *storeDict=self.storeModel.myStoreArray[button.tag];
+        mobile=[NSString stringWithFormat:@"%@",[storeDict objectForKey:@"mobile"]];
+    }
     
     NSMutableString * str=[[NSMutableString alloc] initWithFormat:@"telprompt://%@",mobile];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];

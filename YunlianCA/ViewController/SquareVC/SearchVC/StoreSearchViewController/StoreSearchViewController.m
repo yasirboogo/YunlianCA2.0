@@ -96,7 +96,7 @@
 
 -(void)createHistoryTableView
 {
-    _historyTableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+    _historyTableView=[[UITableView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_WIDTH, SCREEN_HEIGHT-64)];
     _historyTableView.delegate=self;
     _historyTableView.dataSource=self;
     _historyTableView.tableFooterView=[[UIView alloc]init];

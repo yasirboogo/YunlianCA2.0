@@ -181,6 +181,8 @@
 		BF1E4E321E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E4E311E9E0CA3008A5975 /* MyRedEnvelopeDetailViewController.m */; };
 		BF1E4E361E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E4E351E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m */; };
 		BF1E4E3D1E9F5932008A5975 /* UITextView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1E4E3C1E9F5932008A5975 /* UITextView+Placeholder.m */; };
+		BF7442151EA48FD400DCC1B5 /* hongdian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7442131EA48FD400DCC1B5 /* hongdian@2x.png */; };
+		BF7442161EA48FD400DCC1B5 /* hongdian@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7442141EA48FD400DCC1B5 /* hongdian@3x.png */; };
 		FA0214251DAE14B5006CCBAF /* ChangePayPasswordVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0214241DAE14B5006CCBAF /* ChangePayPasswordVC.m */; };
 		FA07FFB81D2213770080711B /* GoodsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA07FFB71D2213770080711B /* GoodsDetailViewController.m */; };
 		FA0C83951E091A730058CB23 /* tuijian_shouye@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FA0C83911E091A730058CB23 /* tuijian_shouye@2x.png */; };
@@ -1033,6 +1035,8 @@
 		BF1E4E351E9E0CDF008A5975 /* MySendRedEnvelopeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySendRedEnvelopeViewController.m; sourceTree = "<group>"; };
 		BF1E4E3B1E9F5932008A5975 /* UITextView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+Placeholder.h"; sourceTree = "<group>"; };
 		BF1E4E3C1E9F5932008A5975 /* UITextView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+Placeholder.m"; sourceTree = "<group>"; };
+		BF7442131EA48FD400DCC1B5 /* hongdian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hongdian@2x.png"; sourceTree = "<group>"; };
+		BF7442141EA48FD400DCC1B5 /* hongdian@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hongdian@3x.png"; sourceTree = "<group>"; };
 		C21BDC28DE26A6AB35FC94A5 /* Pods-YunlianCA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YunlianCA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YunlianCA/Pods-YunlianCA.debug.xcconfig"; sourceTree = "<group>"; };
 		FA0214231DAE14B5006CCBAF /* ChangePayPasswordVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangePayPasswordVC.h; sourceTree = "<group>"; };
 		FA0214241DAE14B5006CCBAF /* ChangePayPasswordVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangePayPasswordVC.m; sourceTree = "<group>"; };
@@ -3927,6 +3931,8 @@
 		FAAF780E1D081F6C00BFD27E /* Wode */ = {
 			isa = PBXGroup;
 			children = (
+				BF7442131EA48FD400DCC1B5 /* hongdian@2x.png */,
+				BF7442141EA48FD400DCC1B5 /* hongdian@3x.png */,
 				FA64126A1DF7A7B3005D0FC5 /* wode_wodewailian@2x.png */,
 				FA64126B1DF7A7B3005D0FC5 /* wode_wodewailian@3x.png */,
 				FAC56CDD1DDD4CA900E46333 /* jiantoukuang@2x.png */,
@@ -4535,6 +4541,7 @@
 				FA8C7FC31D10F1A10053DCA0 /* wode_shenqingshequ@3x.png in Resources */,
 				FA725AB81D816B9400D9B380 /* tianjiatupian@3x.png in Resources */,
 				FA406C8B1E25D807009D4685 /* hongbao_you_hui@2x.png in Resources */,
+				BF7442151EA48FD400DCC1B5 /* hongdian@2x.png in Resources */,
 				FA5E594C1D1AAEA30074867A /* linju_faxianqun@3x.png in Resources */,
 				FAF880B61E095F1A00C464A8 /* hongbao_close@3x.png in Resources */,
 				ADCD52D21E7136450077DEBF /* huise@3x.png in Resources */,
@@ -4623,6 +4630,7 @@
 				ADD4268B1E5A94C10080514F /* zuichun@3x.png in Resources */,
 				FA8ADF041D058C6A00922FAB /* Main.storyboard in Resources */,
 				FAAF780B1D081F5300BFD27E /* test_ad03@3x.png in Resources */,
+				BF7442161EA48FD400DCC1B5 /* hongdian@3x.png in Resources */,
 				FA725AAB1D816B9400D9B380 /* fanhui@2x.png in Resources */,
 				FAF880B11E095E3200C464A8 /* hongbao_open@2x.png in Resources */,
 				FA6D27211D0EBA6400D73F2A /* QBImagePickerController.strings in Resources */,
